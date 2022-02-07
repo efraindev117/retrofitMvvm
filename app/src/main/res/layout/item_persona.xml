@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!-- Media -->
+    <ImageView
+        android:id="@+id/ivPersonaje"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        app:srcCompat="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/content_description_media"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title, secondary and supporting text -->
+        <TextView
+            android:id="@+id/tv_Nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="nombre"
+            />
+        <TextView
+            android:id="@+id/tv_Genero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="asd"
+            android:textColor="?android:attr/textColorSecondary"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            tools:text="asd"
+            android:textColor="?android:attr/textColorSecondary"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
